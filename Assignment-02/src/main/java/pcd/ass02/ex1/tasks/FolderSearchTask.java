@@ -44,4 +44,3 @@ class FolderSearchTask extends RecursiveTask<Long> {
     }
 
 }
-    

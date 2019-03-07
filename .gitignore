@@ -1,28 +1,113 @@
-## Windows
-# Windows thumbnail cache files
-Thumbs.db
-ehthumbs.db
-ehthumbs_vista.db
+### Intellij+all ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
-# Dump file
-*.stackdump
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
 
-# Folder config file
-[Dd]esktop.ini
+# Generated files
+.idea/**/contentModel.xml
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# Sensitive or high-churn files
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+# Gradle
+.idea/**/gradle.xml
+.idea/**/libraries
 
-# Windows shortcuts
-*.lnk
+# Gradle and Maven with auto-import
+# When using Gradle or Maven with auto-import, you should exclude module files,
+# since they will be recreated, and may cause churn.  Uncomment if using
+# auto-import.
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
 
-## macOS
+# CMake
+cmake-build-*/
+
+# Mongo Explorer plugin
+.idea/**/mongoSettings.xml
+
+# File-based project format
+*.iws
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Editor-based Rest Client
+.idea/httpRequests
+
+# Android studio 3.1+ serialized cache file
+.idea/caches/build_file_checksums.ser
+
+### Intellij+all Patch ###
+# Ignores the whole .idea folder and all .iml files
+# See https://github.com/joeblau/gitignore.io/issues/186 and https://github.com/joeblau/gitignore.io/issues/360
+
+.idea/
+
+# Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023
+
+*.iml
+modules.xml
+.idea/misc.xml
+*.ipr
+
+# Sonarlint plugin
+ .idea/sonarlint
+
+### Java ###
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+### macOS ###
 # General
 .DS_Store
 .AppleDouble
@@ -50,25 +135,53 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-## Microsoft Office
-*.tmp
+### Scala ###
 
-# Word temporary
-~$*.doc*
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
 
-# Excel temporary
-~$*.xls*
+# Dump file
+*.stackdump
 
-# Excel Backup File
-*.xlk
+# Folder config file
+[Dd]esktop.ini
 
-# PowerPoint temporary
-~$*.ppt*
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
 
-# Visio autosave temporary files
-.~vsd
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
 
-## TeX
+# Windows shortcuts
+*.lnk
+
+### Gradle ###
+.gradle
+build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
+
+### Gradle Patch ###
+**/build/
+
+### LaTeX ###
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
@@ -86,7 +199,7 @@ Temporary Items
 ## Intermediate documents:
 *.dvi
 *.xdv
--converted-to.
+*-converted-to.*
 # these rules might exclude image files for figures etc.
 # *.ps
 # *.eps
@@ -94,7 +207,6 @@ Temporary Items
 
 ## Generated if empty string is given at "Please type another file name for output:"
 .pdf
-*.pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
@@ -111,6 +223,10 @@ Temporary Items
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
+
+## Build tool directories for auxiliary files
+# latexrun
+latex.out/
 
 ## Auxiliary and intermediate files from other packages:
 # algorithms
@@ -131,6 +247,9 @@ acs-*.bib
 
 # changes
 *.soc
+
+# comment
+*.cut
 
 # cprotect
 *.cpt
@@ -176,7 +295,7 @@ acs-*.bib
 *.glsdefs
 
 # gnuplottex
--gnuplottex-
+*-gnuplottex-*
 
 # gregoriotex
 *.gaux
@@ -212,10 +331,10 @@ acs-*.bib
 *.maf
 *.mlf
 *.mlt
-.mtc[0-9]
-.slf[0-9]
-.slt[0-9]
-.stc[0-9]
+*.mtc[0-9]*
+*.slf[0-9]*
+*.slt[0-9]*
+*.stc[0-9]*
 
 # minted
 _minted*
@@ -225,7 +344,9 @@ _minted*
 *.mw
 
 # nomencl
+*.nlg
 *.nlo
+*.nls
 
 # pax
 *.pax
@@ -254,6 +375,9 @@ sympy-plots-for-*.tex/
 *.pytxcode
 pythontex-files-*/
 
+# tcolorbox
+*.listing
+
 # thmtools
 *.loe
 
@@ -265,8 +389,18 @@ pythontex-files-*/
 # todonotes
 *.tdo
 
+# vhistory
+*.hst
+*.ver
+
 # easy-todo
 *.lod
+
+# xcolor
+*.xcp
+
+# xmpincl
+*.xmpi
 
 # xindy
 *.xdy
@@ -289,11 +423,14 @@ TSWLatexianTemp*
 # Texpad
 .texpadtmp
 
+# LyX
+*.lyx~
+
 # Kile
 *.backup
 
 # KBibTeX
-~[0-9]
+*~[0-9]*
 
 # auto folder when using emacs and auctex
 ./auto/*
@@ -305,103 +442,6 @@ TSWLatexianTemp*
 # standalone packages
 *.sta
 
-## Vim
-# Swap
-[._]*.s[a-v][a-z]
-[._]*.sw[a-p]
-[._]s[a-v][a-z]
-[._]sw[a-p]
-
-# Session
-Session.vim
-
-# Temporary
-.netrwhist
-*~
-# Auto-generated tag files
-tags
-
-## Java
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-
-## Gradle
-.gradle
-Assignment-0[1-4]/build/
-
-# Ignore Gradle GUI config
-gradle-app.setting
-
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
-
-# Cache of project
-.gradletasknamecache
-
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
-
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
-# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
-
-# User-specific stuff:
-.idea/workspace.xml
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/dictionaries
-
-.idea
-*.iml
-
-# CMake
-cmake-build-debug/
-cmake-build-release/
-
-# Mongo Explorer plugin:
-.idea/**/mongoSettings.xml
-
-## File-based project format:
-*.iws
-
-## Plugin-specific files:
-
-# IntelliJ
-out/
-
-# mpeltonen/sbt-idea plugin
-.idea_modules/
-
-# JIRA plugin
-atlassian-ide-plugin.xml
-
-# Crashlytics plugin (for Android Studio and IntelliJ)
-com_crashlytics_export_strings.xml
-crashlytics.properties
-crashlytics-build.properties
-fabric.properties
-
-!libs/**/*.jar
-
-/release/
-
-.vertx/
+### LaTeX Patch ###
+# glossaries
+*.glstex
